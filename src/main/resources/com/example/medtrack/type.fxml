@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="567.0" prefWidth="753.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medtrack.HelloController">
+   <children>
+      <ChoiceBox layoutX="30.0" layoutY="38.0" prefHeight="71.0" prefWidth="538.0" />
+   </children>
+</AnchorPane>
