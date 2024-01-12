@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medtrack.ControllerRegisterPatient">
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="754.0" style="-fx-background-color: #191970;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#fafafa00" layoutX="126.0" layoutY="77.0" radius="73.0" stroke="IVORY" strokeType="INSIDE" />
+            <Label layoutX="83.0" layoutY="37.0" prefHeight="33.0" prefWidth="85.0" text="MedTrack" textFill="IVORY">
+               <font>
+                  <Font name="Palatino Linotype Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="81.0" prefHeight="18.0" prefWidth="160.0" text=" Where Technology Meets " textFill="IVORY">
+               <font>
+                  <Font name="Palatino Linotype Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="99.0" prefHeight="18.0" prefWidth="88.0" text="Medical Precision" textFill="IVORY">
+               <font>
+                  <Font name="Palatino Linotype Italic" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="30.399978637695312" endY="6.5999908447265625" layoutX="161.0" layoutY="70.0" startX="-98.40003967285156" startY="6.5999908447265625" stroke="IVORY" />
+            <Circle fill="#fafafa00" layoutX="126.0" layoutY="90.0" radius="73.0" stroke="IVORY" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="466.0" prefWidth="283.0" style="-fx-background-color: #FFFFF0;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane layoutY="-1.0" prefHeight="402.0" prefWidth="284.0" style="-fx-background-color: #FFFFF0;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="594.0" prefWidth="286.0" style="-fx-background-color: #FFFFF0;">
+                     <children>
+                        <Button fx:id="HospitalInfoButton" layoutX="11.0" layoutY="35.0" mnemonicParsing="false" onAction="#HospialInfo_onAction" prefHeight="56.0" prefWidth="253.0" text="Hospital Information">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Employees" layoutX="11.0" layoutY="105.0" mnemonicParsing="false" onAction="#Employees_onAction" prefHeight="56.0" prefWidth="253.0" text="Employees">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="HospitalizedPatients" layoutX="11.0" layoutY="175.0" mnemonicParsing="false" onAction="#HospitalizedPatients_onAction" prefHeight="56.0" prefWidth="253.0" text="Hospitalized Patients">
+                           <font>
+                              <Font name="Palatino Linotype" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="DeathStatistics" layoutX="11.0" layoutY="245.0" mnemonicParsing="false" onAction="#DeathStatistics_onAction" prefHeight="56.0" prefWidth="253.0" text="Death statistics">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Departments" layoutX="11.0" layoutY="315.0" mnemonicParsing="false" onAction="#Departments_onAction" prefHeight="56.0" prefWidth="253.0" text="Departments">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Back" layoutY="-2.0" mnemonicParsing="false" onAction="#Back_onAction" prefHeight="26.0" prefWidth="73.0" text="&lt;- Back">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Rooms" layoutX="11.0" layoutY="385.0" mnemonicParsing="false" onAction="#Rooms_onAction" prefHeight="56.0" prefWidth="253.0" text="Rooms">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RegisterPatient" layoutX="11.0" layoutY="455.0" mnemonicParsing="false" onAction="#RegisterPatient_onAction" prefHeight="56.0" prefWidth="253.0" text="Register patient">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RegisterNewborn" layoutX="11.0" layoutY="525.0" mnemonicParsing="false" onAction="#RegisterNewborn_onAction" prefHeight="56.0" prefWidth="253.0" text="Register newborn">
+                           <font>
+                              <Font name="Palatino Linotype" size="19.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="454.0" prefWidth="470.0" style="-fx-background-color: #FFFFF0;" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane layoutX="4.0" layoutY="-1.0" prefHeight="403.0" prefWidth="466.0" style="-fx-background-color: #FFFFF0;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="466.0" style="-fx-background-color: #FFFFF0;">
+                     <children>
+                        <Button fx:id="Register" layoutX="215.0" layoutY="430.0" mnemonicParsing="false" onAction="#Register_onAction" prefHeight="40.0" prefWidth="150.0" text="Register">
+                           <font>
+                              <Font name="Palatino Linotype" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="EmployeeName" layoutX="20.0" layoutY="14.0" prefHeight="44.0" prefWidth="430.0" text="Register patient:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ErrorLabel" layoutX="183.0" layoutY="395.0" prefHeight="18.0" prefWidth="183.0" textFill="RED">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="140.0" prefHeight="38.0" prefWidth="110.0" text="CNP:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="200.0" prefHeight="38.0" prefWidth="106.0" text="Date:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="E_Salary" layoutX="20.0" layoutY="230.0" prefHeight="38.0" prefWidth="97.0" text="Disease:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="E_Positions" layoutX="20.0" layoutY="170.0" prefHeight="38.0" prefWidth="150.0" text="Primary Dr. CNP">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="110.0" prefHeight="38.0" prefWidth="110.0" text="Last Name:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="E_Positions1" layoutX="20.0" layoutY="290.0" prefHeight="38.0" prefWidth="120.0" text="Check In:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="LastName_Field" layoutX="162.0" layoutY="113.0" prefHeight="26.0" prefWidth="278.0" promptText="Last Name" />
+                        <TextField fx:id="CNP_Field" layoutX="162.0" layoutY="143.0" prefHeight="26.0" prefWidth="278.0" promptText="CNP" />
+                        <TextField fx:id="Date_Field" layoutX="162.0" layoutY="203.0" prefHeight="26.0" prefWidth="279.0" promptText="yyyy-MM-dd" />
+                        <TextField fx:id="PrimaryDrCNP_Field" layoutX="162.0" layoutY="173.0" prefHeight="26.0" prefWidth="279.0" promptText="Primary Dr. CNP" />
+                        <TextField fx:id="CheckIn_Field" layoutX="162.0" layoutY="293.0" prefHeight="26.0" prefWidth="280.0" promptText="yyyy-MM-dd" />
+                        <Label fx:id="E_Positions11" layoutX="20.0" layoutY="320.0" prefHeight="38.0" prefWidth="97.0" text="Check Out:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="E_Positions111" layoutX="20.0" layoutY="350.0" prefHeight="38.0" prefWidth="97.0" text="Room:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="E_Positions1111" layoutX="20.0" layoutY="260.0" prefHeight="38.0" prefWidth="97.0" text="Treatment:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="CheckOut_Field" layoutX="162.0" layoutY="323.0" prefHeight="26.0" prefWidth="280.0" promptText="yyyy-MM-dd" />
+                        <TextField fx:id="Room_Field" layoutX="162.0" layoutY="353.0" prefHeight="26.0" prefWidth="280.0" promptText="Room" />
+                        <TextField fx:id="Treatment_Field" layoutX="162.0" layoutY="263.0" prefHeight="26.0" prefWidth="280.0" promptText="Treatment" />
+                        <Label layoutX="20.0" layoutY="80.0" prefHeight="38.0" prefWidth="110.0" text="First Name:">
+                           <font>
+                              <Font name="Palatino Linotype Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="FirstName_Field" layoutX="162.0" layoutY="83.0" prefHeight="26.0" prefWidth="278.0" promptText="First Name" />
+                        <ChoiceBox id="DiseaseChoice" fx:id="DiseaseC" layoutX="162.0" layoutY="233.0" prefHeight="26.0" prefWidth="279.0" style="-fx-background-color: #FFFFFF;" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Line endX="-100.00003814697266" endY="279.5999755859375" layoutX="100.0" layoutY="118.0" startX="-100.00003814697266" startY="-113.00001525878906" stroke="MIDNIGHTBLUE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

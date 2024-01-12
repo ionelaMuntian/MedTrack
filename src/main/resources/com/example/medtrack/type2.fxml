@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medtrack.Controller2">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medtrack.ControllerLoginAdmin">
    <top>
       <AnchorPane prefHeight="161.0" prefWidth="754.0" style="-fx-background-color: #191970;" BorderPane.alignment="CENTER">
          <children>
@@ -59,42 +59,32 @@
       <AnchorPane prefHeight="403.0" prefWidth="466.0" style="-fx-background-color: #FFFFF0;" BorderPane.alignment="CENTER">
          <children>
             <Line endX="-100.00003814697266" endY="279.5999755859375" layoutX="100.0" layoutY="118.0" startX="-100.00003814697266" startY="-113.00001525878906" stroke="MIDNIGHTBLUE" />
-            <TextField fx:id="CNPTextField" layoutX="25.0" layoutY="248.0" prefHeight="34.0" prefWidth="298.0" promptText="CNP">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </TextField>
-            <Label layoutX="25.0" layoutY="214.0" prefHeight="34.0" prefWidth="417.0" text="Please introduce your CNP:">
+            <Label layoutX="25.0" layoutY="39.0" prefHeight="34.0" prefWidth="417.0" text="Hospital ID">
                <font>
                   <Font name="Palatino Linotype" size="19.0" />
                </font>
             </Label>
-            <Label layoutX="25.0" layoutY="39.0" prefHeight="34.0" prefWidth="417.0" text="Please introduce your first name:">
-               <font>
-                  <Font name="Palatino Linotype" size="19.0" />
-               </font>
-            </Label>
-            <TextField fx:id="FirstName" layoutX="25.0" layoutY="73.0" prefHeight="34.0" prefWidth="298.0" promptText="First Name">
+            <TextField fx:id="HospitalID" layoutX="25.0" layoutY="73.0" prefHeight="34.0" prefWidth="298.0" promptText="Hospital ID">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Button fx:id="LoginButton2" layoutX="89.0" layoutY="331.0" mnemonicParsing="false" onAction="#LoginButtonOnAction2" prefHeight="40.0" prefWidth="186.0" text="Login">
+            <Button fx:id="LoginButton3" layoutX="81.0" layoutY="246.0" mnemonicParsing="false" onAction="#LoginButtonOnAction3" prefHeight="40.0" prefWidth="186.0" text="Login">
                <font>
                   <Font name="Palatino Linotype" size="15.0" />
                </font>
             </Button>
-            <Label fx:id="loginMessageLabel2" layoutX="25.0" layoutY="286.0" prefHeight="34.0" prefWidth="282.0" textFill="#e70303">
+            <Label fx:id="loginMessageLabel3" layoutX="25.0" layoutY="201.0" prefHeight="34.0" prefWidth="282.0" textFill="#e70303">
                <font>
                   <Font name="Palatino Linotype" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="LastName" layoutX="25.0" layoutY="155.0" prefHeight="34.0" prefWidth="298.0" promptText="Last Name">
+            <TextField fx:id="AdminID" layoutX="25.0" layoutY="155.0" prefHeight="34.0" prefWidth="298.0" promptText="Administrator ID">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Label layoutX="25.0" layoutY="121.0" prefHeight="34.0" prefWidth="417.0" text="Please introduce your last name:">
+            <Label layoutX="25.0" layoutY="121.0" prefHeight="34.0" prefWidth="417.0" text="Administrator ID">
                <font>
                   <Font name="Palatino Linotype" size="19.0" />
                </font>

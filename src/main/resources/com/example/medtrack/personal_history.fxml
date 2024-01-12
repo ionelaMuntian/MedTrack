@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medtrack.ControllerPersonalHistory">
+   <top>
+      <AnchorPane prefHeight="164.0" prefWidth="758.0" style="-fx-background-color: #191970;" BorderPane.alignment="CENTER">
+         <Circle fill="#fafafa00" layoutX="126.0" layoutY="77.0" radius="73.0" stroke="IVORY" strokeType="INSIDE" />
+         <Label layoutX="83.0" layoutY="37.0" prefHeight="33.0" prefWidth="85.0" text="MedTrack" textFill="IVORY">
+            <font>
+               <Font name="Palatino Linotype Bold Italic" size="19.0" />
+            </font>
+         </Label>
+         <Label layoutX="62.0" layoutY="81.0" prefHeight="18.0" prefWidth="160.0" text=" Where Technology Meets " textFill="IVORY">
+            <font>
+               <Font name="Palatino Linotype Italic" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="82.0" layoutY="99.0" prefHeight="18.0" prefWidth="88.0" text="Medical Precision" textFill="IVORY">
+            <font>
+               <Font name="Palatino Linotype Italic" size="12.0" />
+            </font>
+         </Label>
+         <Line endX="30.399978637695312" endY="6.5999908447265625" layoutX="161.0" layoutY="70.0" startX="-98.40003967285156" startY="6.5999908447265625" stroke="IVORY" />
+         <Circle fill="#fafafa00" layoutX="126.0" layoutY="90.0" radius="73.0" stroke="IVORY" strokeType="INSIDE" />
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="402.0" prefWidth="294.0" style="-fx-background-color: #FFFFF0;" BorderPane.alignment="CENTER">
+         <Button fx:id="Back" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonOnAction" prefHeight="30.0" prefWidth="68.0" text="&lt;-Back" />
+         <Label layoutX="21.0" layoutY="60.0" prefHeight="44.0" prefWidth="107.0" text="First Name: ">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="90.0" prefHeight="44.0" prefWidth="139.0" text="Last Name: ">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="120.0" prefHeight="44.0" prefWidth="139.0" text="CNP:">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="210.0" prefHeight="44.0" prefWidth="139.0" text="Nationality:">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="180.0" prefHeight="44.0" prefWidth="139.0" text="Place of birth:">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="240.0" prefHeight="44.0" prefWidth="139.0" text="Address:">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="21.0" layoutY="150.0" prefHeight="44.0" prefWidth="96.0" text="Birth Date:">
+            <font>
+               <Font name="Palatino Linotype Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="first_name_label" layoutX="130.0" layoutY="60.0" prefHeight="44.0" prefWidth="123.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="last_name_label" layoutX="121.0" layoutY="90.0" prefHeight="44.0" prefWidth="128.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="cnp_label" layoutX="69.0" layoutY="120.0" prefHeight="44.0" prefWidth="205.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="birth_date_label" layoutX="124.0" layoutY="150.0" prefHeight="44.0" prefWidth="165.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="place_label" layoutX="145.0" layoutY="180.0" prefHeight="44.0" prefWidth="142.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="nationality_label" layoutX="128.0" layoutY="210.0" prefHeight="44.0" prefWidth="157.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="address_label" alignment="TOP_LEFT" layoutX="97.0" layoutY="251.0" prefHeight="31.0" prefWidth="184.0">
+            <font>
+               <Font name="Palatino Linotype Italic" size="18.0" />
+            </font>
+         </Label>
+         <ScrollBar layoutX="-4.0" layoutY="386.0" prefHeight="22.0" prefWidth="298.0" />
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="405.0" prefWidth="439.0" BorderPane.alignment="CENTER">
+         <TableView fx:id="Table" layoutX="42.0" layoutY="-3.0" prefHeight="386.0" prefWidth="458.0">
+            <columns>
+               <TableColumn fx:id="RegistrationDate" prefWidth="177.60000455379486" text="Registration Date" />
+               <TableColumn fx:id="Disease" minWidth="0.0" prefWidth="134.4000244140625" text="Disease" />
+               <TableColumn fx:id="Hospital" prefWidth="361.6000061035156" text="Hospital" />
+               <TableColumn fx:id="PrimaryDoctor" prefWidth="209.5999755859375" text="Primary Doctor" />
+               <TableColumn fx:id="Treatment" prefWidth="267.1998291015625" text="Treatment" />
+            </columns>
+         </TableView>
+         <ScrollBar layoutX="42.0" layoutY="382.0" prefHeight="22.0" prefWidth="456.0" />
+         <ScrollBar layoutX="475.0" layoutY="1.0" orientation="VERTICAL" prefHeight="381.0" prefWidth="22.0" />
+      </AnchorPane>
+   </right>
+</BorderPane>
